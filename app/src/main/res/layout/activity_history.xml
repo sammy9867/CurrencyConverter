@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CurrencyHistoryActivity"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/apptool">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_history"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+            <LinearLayout
+                android:id="@+id/llContainer"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="90dp"
+                >
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_close"
+                    android:background="?attr/selectableItemBackground"
+                    android:id="@+id/close_history"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/l2Container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/currency_flag_one"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:src="@drawable/eur" />
+
+
+                        <TextView
+                            android:id="@+id/currency_symbol_one"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/white"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="EUR"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/conversion_image"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/ic_conversion" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/currency_flag_two"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:src="@drawable/eur" />
+
+
+                        <TextView
+                            android:id="@+id/currency_symbol_two"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="EUR"
+                            android:textColor="@android:color/white"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_history"
+        android:layout_below="@+id/apptool"
+        android:layout_marginTop="10dp">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="657dp">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

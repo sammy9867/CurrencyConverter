@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#BB86FC</color>
+
+    <color name="shamrock_green">#0F9D58</color>
+    <color name="light_green">#C8E9D9</color>
+
+    <color name="cinnabar">#E64A19</color>
+    <color name="light_red">#FBD7DA</color>
+
+    <color name="cyan_green">#E0FFFF</color>
+
+</resources>

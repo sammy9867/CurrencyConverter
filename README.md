@@ -21,7 +21,7 @@ $ git clone https://github.com/sammy9867/CurrencyConverter.git
 * A historical line chart comparison between the base and the selected currency dated back from 4th January, 1999.
 
 ## Screenshots
-![alt text](screenshots/main.jpg)
+![Alt text](screenshots/main.PNG)
 ![alt text](screenshots/listofrates.jpg)
 ![alt text](screenshots/graphprofit.jpg)
 ![alt text](screenshots/graphloss.jpg)
